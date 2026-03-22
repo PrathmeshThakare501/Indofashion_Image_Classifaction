@@ -6,6 +6,11 @@ This project focuses on classifying Indian ethnic clothing into **15 categories*
 ### Dataset
 The main dataset used is the IndoFashion dataset, which contains 106K images. For a fair evaluation, the author ensures an equal distribution of classes in the validation and test sets, with each set consisting of 500 samples per class. Since the requirement suggested creating a smaller subset by selecting 500 images from each category for training and testing, I used the validation dataset from the main dataset, as it already fulfils this category-based requirement.
 
+This project uses the **IndoFashion dataset** for training and evaluation.
+- Dataset: IndoFashion – Apparel Classification for Indian Ethnic Clothes
+- Authors: Pranjal Singh Rajput, Shivangi Aneja
+- link: https://indofashion.github.io/
+
 ### Data Splitting
 I have used stratified sampling to split the dataset into train, and test sets. This ensures that all classes are represented proportionally in each split. 
 
@@ -102,3 +107,19 @@ In contrast, ResNet50, being a deeper and more complex model, likely overfitted 
 ## Conclusion
 
 For this image classification task, MobileNetV2 provides a better balance between performance and efficiency, achieving higher accuracy with faster training time
+
+---
+
+## Citation
+
+If you use the IndoFashion dataset, please cite the original authors:
+
+```bibtex
+@InProceedings{Rajput_2021_CVPR,
+  author    = {Rajput, Pranjal Singh and Aneja, Shivangi},
+  title     = {IndoFashion: Apparel Classification for Indian Ethnic Clothes},
+  booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) Workshops},
+  month     = {June},
+  year      = {2021},
+  pages     = {3935-3939}
+}
